@@ -1,6 +1,6 @@
 # Description
 
-A "init" container for [Kubic](https://en.opensuse.org/Portal:Kubic).
+A ["init" container](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) for [Kubic](https://en.opensuse.org/Portal:Kubic).
 
 # Documentation
 
