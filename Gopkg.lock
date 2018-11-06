@@ -670,12 +670,16 @@
   version = "v1.9.1"
 
 [[projects]]
-  digest = "1:af865b7eaadddec9229ee4cd13d846c44ac0e85c5cf04934a26074b3a8efea19"
+  digest = "1:e427d507e67947cc79aaf1bd5c36fdb19796aa2f6aa0b4b2cd4e21326a68d894"
   name = "golang.org/x/crypto"
   packages = [
+    "curve25519",
     "ed25519",
     "ed25519/internal/edwards25519",
+    "internal/chacha20",
     "pbkdf2",
+    "poly1305",
+    "ssh",
     "ssh/terminal",
   ]
   pruneopts = "UT"
@@ -1360,11 +1364,13 @@
     "github.com/ghodss/yaml",
     "github.com/golang/glog",
     "github.com/kubernetes/kubernetes/cmd/kubeadm/app/util/apiclient",
+    "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
     "github.com/renstrom/dedent",
     "github.com/spf13/cobra",
     "github.com/spf13/pflag",
     "github.com/yuroyoro/swalker",
+    "golang.org/x/crypto/ssh",
     "golang.org/x/net/context",
     "gopkg.in/yaml.v2",
     "k8s.io/api/apps/v1",
@@ -1376,19 +1382,24 @@
     "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1",
     "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset",
     "k8s.io/apimachinery/pkg/api/errors",
+    "k8s.io/apimachinery/pkg/api/meta",
     "k8s.io/apimachinery/pkg/apis/meta/v1",
+    "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured",
     "k8s.io/apimachinery/pkg/runtime",
     "k8s.io/apimachinery/pkg/runtime/schema",
     "k8s.io/apimachinery/pkg/types",
-    "k8s.io/apimachinery/pkg/util/intstr",
     "k8s.io/apimachinery/pkg/util/net",
     "k8s.io/apimachinery/pkg/util/sets",
     "k8s.io/apimachinery/pkg/util/wait",
+    "k8s.io/apimachinery/pkg/util/yaml",
     "k8s.io/apiserver/pkg/util/flag",
+    "k8s.io/client-go/discovery",
+    "k8s.io/client-go/dynamic",
     "k8s.io/client-go/kubernetes",
     "k8s.io/client-go/kubernetes/scheme",
     "k8s.io/client-go/plugin/pkg/client/auth/gcp",
     "k8s.io/client-go/rest",
+    "k8s.io/client-go/restmapper",
     "k8s.io/client-go/tools/record",
     "k8s.io/client-go/util/cert",
     "k8s.io/code-generator/cmd/deepcopy-gen",

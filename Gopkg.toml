@@ -118,3 +118,7 @@ required = [
 [prune]
   unused-packages = true
   go-tests = true
+
+[[constraint]]
+  name = "github.com/onsi/ginkgo"
+  version = "1.6.0"
