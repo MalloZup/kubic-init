@@ -117,7 +117,7 @@ docker-reset: kubeadm-reset
 
 $(IMAGE_TAR_GZ): $(IMAGE_DEPS)
 	@echo ">>> Creating Docker image..."
-	docker build -t $(IMAGE_NAME):latest .
+	docker build --no-cache -t $(IMAGE_NAME):latest .
 	@echo ">>> Creating tar for image..."
 	docker save $(IMAGE_NAME):latest | gzip > $(IMAGE_TAR_GZ)
 
